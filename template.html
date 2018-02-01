@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <title>Lauritz.com</title>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+   <!-- <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+   <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+   <form action="">
+
+      <button type="reset" class="control control-text">Reset</button>
+
+      <fieldset data-filter-group="" class="checkbox-group">
+         <label class="checkbox-group-label">Shape</label>
+
+         <div class="checkbox">
+            <label class="checkbox-label">A</label>
+            <input type="checkbox" value=".category-a">
+         </div>
+
+         <div class="checkbox">
+            <label class="checkbox-label">B</label>
+            <input type="checkbox" value=".category-b">
+         </div>
+
+      </fieldset>
+
+      <fieldset data-filter-group="" class="checkbox-group">
+         <label class="checkbox-group-label">Shape</label>
+
+         <div class="checkbox">
+            <label class="checkbox-label">C</label>
+            <input type="checkbox" value=".category-c">
+         </div>
+
+         <div class="checkbox">
+            <label class="checkbox-label">D</label>
+            <input type="checkbox" value=".category-d">
+         </div>
+
+      </fieldset>
+   </form>
+
+   <div class="mixitup">
+      <div class="mix category-a" data-order="1">Cat A</div>
+      <div class="mix category-b" data-order="2">Cat B</div>
+      <div class="mix category-b category-c" data-order="3">Cat B / C</div>
+      <div class="mix category-a category-d" data-order="4">Cat A / D</div>
+   </div>
+
+
+   <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+      crossorigin="anonymous"></script> -->
+   <!-- <script src="/js/bootstrap.min.js"></script> -->
+   <!-- <script src="/js/slider.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script> -->
+   <script src="/js/mixitup.min.js"></script>
+   <script src="/js/mixitup-multifilter.min.js"></script>
+   <script>
+      var containerEl = document.querySelector('.mixitup');
+
+      var mixer = mixitup(containerEl, {
+         multifilter: {
+            enable: true
+         },
+         animation: {
+            effects: 'fade translateZ(-100px)'
+         }
+      });
+   </script>
+</body>
+
+</html>

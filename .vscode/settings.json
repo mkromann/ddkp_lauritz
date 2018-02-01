@@ -1,0 +1,19 @@
+{
+   "liveSassCompile.settings.formats": [
+      {
+         "format": "expanded",
+         "extensionName": ".css",
+         "savePath": "/css"
+      }
+   ],
+   "liveSassCompile.settings.excludeList": [
+      "**/base/bootstrap/scss/bootstrap-grid.scss",
+      "**/base/bootstrap/scss/bootstrap-reboot.scss",
+      "**/base/bootstrap/assets/**"
+   ],
+   "liveSassCompile.settings.generateMap": true,
+   "liveSassCompile.settings.autoprefix": [
+      "> 1%",
+      "last 2 versions"
+   ]
+}
